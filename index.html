@@ -5,12 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"/>
+    <script src="script.js"></script>
     <title>Project</title>
 </head>
 
 <body>
     <header>
-        <img src="/Icons/dropdown_Menu.png" alt="Dropdown Menu">
+        <div class="dropdown" data-dropdown>
+            <img src="/Icons/dropdown_Menu.png" alt="Dropdown Menu" class="link" data-dropdown-button>
+            <div class="dropdown-menu information-grid">
+                <div class="dropdown-links">
+                    <a href="" class="link">Home</a>
+                    <a href="" class="link">My Skills</a>
+                    <a href="" class="link">About Me</a>
+                </div>
+            </div>
+        </div>
         <a href="">
             <div>About Me</div>
         </a>
@@ -22,7 +33,7 @@
         </a>
     </header>
 
-    <div>
+    <div class="header_cont">
         <h1>The CART Experience</h1>
         <p>
             My name is Eric Yang and I’ll be talking about my CART experience. During my time at CART, I have
@@ -89,7 +100,7 @@
 
         <section>
             <div></div>
-            <a target="_blank" href=""><img src="/Houses/Mike's_Malt_Shop.png" alt="Mike's Malt Shop (A store)"></a>
+            <a target="_blank" href=""><img src="/Houses/Mike's_Malt_Shop.png" alt="Mike's Malt Shop"></a>
             <div></div>
         </section>
 
