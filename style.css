@@ -7,7 +7,13 @@ header {
     align-items: center;
     padding: 1rem;
     justify-content: center;
-    gap: 10rem;
+    gap: 10%;
+    background-color: lightgrey;
+}
+
+.resize {
+    display: flex;
+    width: 50%;
 }
 
 .link {
@@ -18,9 +24,15 @@ header {
     cursor: pointer;
 }
 
+.Txt_none {
+    display: flex;
+    text-decoration: none;
+}
+
 .dropdown.active > .link,
 .link:hover {
-    color: black;
+    color: blue;
+    text-decoration: underline;
 }
 
 .dropdown {
@@ -59,7 +71,20 @@ header {
 
 .header_cont {
     display: flex;
-    justify-content: center;
+    color: white;
     align-items: center;
     flex-direction: column;
+    background-image: url(/Scenery/pexels-pixabay-163872.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    width: 800rem;
+    max-width: 100%;
+    height: 60rem;
+}
+
+.header_cont > p {
+    display: flex;
+    justify-content: space-around;
 }
