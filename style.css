@@ -16,17 +16,33 @@ header {
     width: 50%;
 }
 
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direction_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.Txt_none {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.Txt_none:hover {
+    text-decoration: underline;
+}
+
 .link {
     background: none;
     border: none;
     text-decoration: none;
     color: black;
     cursor: pointer;
-}
-
-.Txt_none {
-    display: flex;
-    text-decoration: none;
 }
 
 .dropdown.active > .link,
@@ -85,6 +101,35 @@ header {
 }
 
 .header_cont > p {
+    margin: 5%;
+}
+
+.skills_organize {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Resume_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    margin: 5%;
+}
+
+.about_me {
+    display: flex;
+    flex-direction: row;
+}
+
+.gray_box {
+    width: 1000px;
+    height: auto;
 }
