@@ -1,14 +1,9 @@
-body {
-    margin: 0%;
+h2 {
+    margin-top: 5vh;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    justify-content: center;
-    gap: 10%;
-    background-color: lightgrey;
+.gray_box {
+    background-color: gray;
 }
 
 .resize {
@@ -19,6 +14,7 @@ header {
 .resize_img_links {
     display: flex;
     width: 100%;
+    max-width: 1000px;
 }
 
 .resize_img_arrow {
@@ -26,9 +22,39 @@ header {
     width: 50%;
 }
 
-.resize_div_button {
+.resize_img_arrow_big {
+    display: flex;
+    width: 100px;
+    max-width: 15%;
+}
+
+.resize_img_icons {
+    display: flex;
+    width: 100%;
+    max-width: 100px;
+}
+
+.resize_div_button_small {
     /* display: flex; */
-    width: 50rem;
+    width: 5rem;
+}
+
+.resize_div_button_big {
+    width: 7rem;
+}
+
+#four_hundred {
+    width: 34.25%;
+    max-width: 400px;
+}
+
+#seven_hundred {
+    width: 50%;
+    max-width: 700px;
+}
+
+.percentage_fix {
+    width: 45%;
 }
 
 .fifty_percent {
@@ -39,11 +65,23 @@ header {
     width: 100%;
 }
 
+.space_between {
+    display: flex;
+    justify-content: space-between;
+}
+
 .gap_filler {
     display: flex;
     justify-content: center;
     gap: 5%;
     align-items: center;
+}
+
+.left_side {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .centered {
@@ -60,6 +98,10 @@ header {
     flex-direction: column;
 }
 
+.txt_center {
+    text-align: center;
+}
+
 .direction_column {
     display: flex;
     flex-direction: column;
@@ -68,6 +110,14 @@ header {
 .direction_row {
     display: flex;
     flex-direction: row;
+}
+
+.space_top {
+    margin-top: 5vh;
+}
+
+.space_top_ten {
+    margin-top: 10vh;
 }
 
 .no_space_around {
@@ -86,6 +136,8 @@ header {
     text-decoration: underline;
 }
 
+/* CSS for the drop down menu */
+
 .link {
     background: none;
     border: none;
@@ -94,7 +146,7 @@ header {
     cursor: pointer;
 }
 
-.dropdown.active > .link,
+.dropdown.active>.link,
 .link:hover {
     color: blue;
     text-decoration: underline;
@@ -116,7 +168,7 @@ header {
     transition: opacity 150ms ease-in-out;
 }
 
-.dropdown.active > .link + .dropdown-menu {
+.dropdown.active>.link+.dropdown-menu {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
@@ -134,7 +186,21 @@ header {
     gap: .25rem;
 }
 
-.header_cont { 
+/* CSS for overall HTML */
+body {
+    margin: 0%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    gap: 10%;
+    background-color: lightgrey;
+}
+
+.header_cont {
     display: flex;
     color: white;
     align-items: center;
@@ -149,12 +215,13 @@ header {
     height: 60rem;
 }
 
-.header_cont > p {
+.header_cont>p {
     margin: 5%;
 }
 
 .skills_organize {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -167,9 +234,7 @@ header {
 
 .Resume_txt {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: gray;
     margin: 5%;
 }
 
@@ -177,6 +242,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .products_organize {
@@ -185,9 +251,36 @@ header {
     justify-content: center;
     align-items: center;
 }
-/* 
-.gray_box {
-    width: 1000px;
-    height: auto;
-    background-color: black;
-} */
+
+.personal_projects_organize {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.job_opprtunities_organize {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.volunteer_opportunities_organize {
+    display: flex;
+}
+
+.contact_me_organize {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    background-color: gray;
+    gap: 10%;
+    justify-content: center;
+    margin-top: 5vh;
+}
