@@ -13,3 +13,22 @@ document.addEventListener('click', e => {
         dropdown.classList.remove('active')
     })
 })
+
+var slideshow = 1;
+showslides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByName("myslides");
+    var dots = document.getElementsByName("dot");
+    if (n > slides.length) {slideshow = 1}
+    if (n < 1) {slidesIndex = slides.length}
+}

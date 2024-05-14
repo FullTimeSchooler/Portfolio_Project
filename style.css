@@ -1,11 +1,28 @@
-h2 {
-    margin-top: 5vh;
+
+
+/* Font Sizing */
+.text_size {
+    font-size: x-large;
 }
+
+.text_size_smaller {
+    font-size: larger;
+
+}
+
+.playfair_font {
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    /* font-style: italic; */
+    font-weight: bold;
+}
+
 
 .gray_box {
-    background-color: gray;
+    background-color: #B4F8C8;
 }
 
+/* Image Sizing */
 .resize {
     display: flex;
     width: 50%;
@@ -34,13 +51,14 @@ h2 {
     max-width: 100px;
 }
 
+/* Button Sizing */
 .resize_div_button_small {
     /* display: flex; */
-    width: 5rem;
+    width: 6rem;
 }
 
 .resize_div_button_big {
-    width: 7rem;
+    width: 9.5rem;
 }
 
 #four_hundred {
@@ -65,6 +83,7 @@ h2 {
     width: 100%;
 }
 
+/* Spacing and Justification */
 .space_between {
     display: flex;
     justify-content: space-between;
@@ -98,10 +117,12 @@ h2 {
     flex-direction: column;
 }
 
+/* Text Centering */
 .txt_center {
     text-align: center;
 }
 
+/* Directions */
 .direction_column {
     display: flex;
     flex-direction: column;
@@ -112,6 +133,7 @@ h2 {
     flex-direction: row;
 }
 
+/* Spacing of sections */
 .space_top {
     margin-top: 5vh;
 }
@@ -120,12 +142,17 @@ h2 {
     margin-top: 10vh;
 }
 
+.space_top_one {
+    margin-top: 1vh;
+}
+
 .no_space_around {
     display: flex;
     margin: 0%;
     padding: 0%;
 }
 
+/* Link decorations */
 .Txt_none {
     display: flex;
     text-decoration: none;
@@ -189,6 +216,7 @@ h2 {
 /* CSS for overall HTML */
 body {
     margin: 0%;
+    background-color: white;
 }
 
 header {
@@ -197,7 +225,7 @@ header {
     padding: 1rem;
     justify-content: center;
     gap: 10%;
-    background-color: lightgrey;
+    background-color: #E3D8F1;
 }
 
 .header_cont {
@@ -217,6 +245,10 @@ header {
 
 .header_cont>p {
     margin: 5%;
+}
+
+h2 {
+    margin-top: 5vh;
 }
 
 .skills_organize {
@@ -273,13 +305,13 @@ header {
 
 .contact_me_organize {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 footer {
     display: flex;
-    background-color: gray;
+    background-color: #E3D8F1;
     gap: 10%;
     justify-content: center;
     margin-top: 5vh;
